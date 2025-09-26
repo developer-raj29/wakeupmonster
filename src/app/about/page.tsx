@@ -2,7 +2,7 @@ import AboutV2 from "@/components/about/AboutV2";
 import ContactV1 from "@/components/contact/ContactV1";
 import FaqV1 from "@/components/faq/FaqV1";
 import HeroV2 from "@/components/hero/AboutHero";
-import LayoutV3 from "@/components/layoutsLayoutV3";
+import LayoutV3 from "@/components/layouts/LayoutV3";
 import PartnerV1 from "@/components/partner/PartnerV1";
 import ProcessV1 from "@/components/process/ProcessV1";
 import ServicesV2 from "@/components/services/ServicesV2";

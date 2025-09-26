@@ -1,6 +1,6 @@
 import FeatureV3 from "@/components/feature/FeatureV3";
 import HeroV2 from "@/components/hero/AboutHero";
-import LayoutV3 from "@/components/layoutsLayoutV3";
+import LayoutV3 from "@/components/layouts/LayoutV3";
 
 export const metadata = {
     title: "Aixor - Blog"
