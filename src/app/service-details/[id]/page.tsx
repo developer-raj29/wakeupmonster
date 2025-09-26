@@ -5,7 +5,7 @@ import PriceV1 from '@/components/pricing/PriceV1';
 import ServiceDetailsContent from '@/components/services/ServiceDetailsContent';
 import TestimonialV1 from '@/components/testimonial/TestimonialV1';
 import ServicesV1Data from "@/assets/jsonData/services/ServicesV1Data.json"
-import LayoutV3 from '@/components/layoutsLayoutV3';
+import LayoutV3 from '@/components/layouts/LayoutV3';
 
 export const metadata = {
     title: "Aixor - Service Details"

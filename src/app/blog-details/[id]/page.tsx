@@ -1,7 +1,7 @@
 import FeatureV3Data from "@/assets/jsonData/feature/FeatureV3Data.json";
 import BlogDetailsContent from '@/components/blog/BlogDetailsContent';
 import Breadcrumb from '@/components/breadcrumb/Breadcrumb';
-import LayoutV3 from '@/components/layoutsLayoutV3';
+import LayoutV3 from '@/components/layouts/LayoutV3';
 
 export const metadata = {
     title: "Aixor - Blog Details"

@@ -1,6 +1,6 @@
 import ContactV1 from '@/components/contact/ContactV1';
 import HeroV2 from '@/components/hero/AboutHero';
-import LayoutV3 from '@/components/layoutsLayoutV3';
+import LayoutV3 from '@/components/layouts/LayoutV3';
 import PartnerV1 from '@/components/partner/PartnerV1';
 import TeamDetailsContent from '@/components/team/TeamDetailsContent';
 import TeamV1Data from "@/assets/jsonData/team/TeamV1Data.json";
