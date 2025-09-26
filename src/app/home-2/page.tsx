@@ -3,7 +3,7 @@ import AwardsV1 from "@/components/awards/AwardsV1";
 import ContactV1 from "@/components/contact/ContactV1";
 import FeatureV1 from "@/components/feature/FeatureV1";
 import HeroV1 from "@/components/hero/HeroV1";
-import LayoutV2 from "@/components/layoutsLayoutV2";
+import LayoutV2 from "@/components/layouts/LayoutV2";
 import PartnerV1 from "@/components/partner/PartnerV1";
 import PriceV1 from "@/components/pricing/PriceV1";
 import ServicesV1 from "@/components/services/ServicesV1";
