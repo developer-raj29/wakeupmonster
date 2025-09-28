@@ -12,11 +12,11 @@ interface DataType {
   textLast?: string;
   info?: string;
   date?: string;
-  delay?: number; // ✅ change from string → number
+  delay?: Number; // ✅ keep as number
 }
 
-const SingleFeatureV2 = ({ features }: { features: DataType }) => {
-  const { id, thumb, name, textFirst, textLast, info, date, delay } = features;
+const SingleFeatureV2 = ({ feature }: { feature: DataType }) => {
+  const { id, thumb, name, textFirst, textLast, info, date, delay } = feature;
 
   const { containerRef, hoverElementRef } = useHoverEffect();
   const [isClient, setIsClient] = useState(false);
@@ -25,18 +25,10 @@ const SingleFeatureV2 = ({ features }: { features: DataType }) => {
     setIsClient(true);
   }, []);
 
-  // Build safe AOS props (only when client is ready)
-  // const aosProps = isClient
-  //   ? {
-  //       "data-aos": "fade-up",
-  //       ...(delay ? { "data-aos-delay": delay ?? 0 } : {}),
-  //     }
-  //   : {};
-
   const aosProps = isClient
     ? {
         "data-aos": "fade-up",
-        "data-aos-delay": delay ?? 0,
+        "data-aos-delay": delay,
       }
     : {};
 
@@ -64,37 +56,32 @@ const SingleFeatureV2 = ({ features }: { features: DataType }) => {
             </Link>
           </div>
 
-          <div
-            className={`feature-project-info-box ${
-              !textFirst && !textLast ? "d-none" : ""
-            }`}
-          >
-            <span className="title">Description</span>
-            <span className="subtitle">
-              {textFirst}
-              <br />
-              {textLast}
-            </span>
-            {/* <span className="subtitle">
-              {textFirst}
-              {textLast && (
-                <>
-                  <br />
-                  {textLast}
-                </>
-              )}
-            </span> */}
-          </div>
+          {(textFirst || textLast) && (
+            <div className="feature-project-info-box">
+              <span className="title">Description</span>
+              <span className="subtitle">
+                {textFirst}
+                {textLast && (
+                  <>
+                    <br />
+                    {textLast}
+                  </>
+                )}
+              </span>
+            </div>
+          )}
 
           <div className="feature-project-info-box">
             <span className="title">Industry:</span>
             <span className="subtitle">{info}</span>
           </div>
 
-          <div className={`feature-project-info-box ${!date ? "d-none" : ""}`}>
-            <span className="title">Release Date:</span>
-            <span className="subtitle">{date}</span>
-          </div>
+          {date && (
+            <div className="feature-project-info-box">
+              <span className="title">Release Date:</span>
+              <span className="subtitle">{date}</span>
+            </div>
+          )}
         </div>
       </div>
     </div>
