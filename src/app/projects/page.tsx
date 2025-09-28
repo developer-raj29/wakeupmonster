@@ -16,7 +16,6 @@ const ProjectsPage = () => {
       <div className="aixor-main projects-page">
         <LayoutV3>
           <HeroV2 title="Features Projects" />
-          swsssssssssssssss
           <FeatureV2 />
           <FaqV1 />
           <ContactV1 />

@@ -14,6 +14,7 @@ import type { Metadata } from "next";
 import { Arapey, Urbanist } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import Dependency from "@/components/utilities/Dependency";
+import { Data } from "@/assets/jsonData/data/data";
 
 const arapey = Arapey({
   weight: ["400"],
@@ -30,7 +31,7 @@ const urbanist = Urbanist({
 });
 
 export const metadata: Metadata = {
-  title: "WAKE UP MONSTER",
+  title: `${Data.METADATA}`,
 };
 
 export default function RootLayout({

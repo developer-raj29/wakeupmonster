@@ -1,9 +1,10 @@
 import FeatureV3 from "@/components/feature/FeatureV3";
 import HeroV2 from "@/components/hero/AboutHero";
 import LayoutV3 from "@/components/layouts/LayoutV3";
+import { Data } from "@/assets/jsonData/data/data";
 
 export const metadata = {
-  title: "WAKE UP MONSTER - Blog",
+  title: `${Data.METADATA} - Blog`,
 };
 
 const BlogPage = () => {
