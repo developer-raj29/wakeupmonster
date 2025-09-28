@@ -12,7 +12,7 @@ interface DataType {
   textLast?: string;
   info?: string;
   date?: string;
-  delay?: Number; // ✅ keep as number
+  delay?: string; // ✅ keep as number
 }
 
 const SingleFeatureV2 = ({ feature }: { feature: DataType }) => {
@@ -23,18 +23,11 @@ const SingleFeatureV2 = ({ feature }: { feature: DataType }) => {
 
   useEffect(() => {
     setIsClient(true);
-  }, []);
-
-  const aosProps = isClient
-    ? {
-        "data-aos": "fade-up",
-        "data-aos-delay": delay,
-      }
-    : {};
+  }, [isClient]);
 
   return (
     <div className="feature-project-single">
-      <div className="feature-project" {...aosProps} ref={containerRef}>
+      <div className="feature-project" ref={containerRef}>
         <div className="hover_mouse" ref={hoverElementRef}>
           <Link href={`/project-details/${id}`}>View</Link>
         </div>

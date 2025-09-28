@@ -7,7 +7,7 @@
     "textLast": "transform their vision into a reality.",
     "info": "Brand Identity",
     "date": "May 6th, 2024",
-    "delay": 100
+    "delay": "100"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "textLast": "transform their vision into a reality.",
     "info": "Web Design",
     "date": "",
-    "delay": 100
+    "delay": "100"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "textLast": "transform their vision into a reality.",
     "info": "Development",
     "date": "",
-    "delay": 200
+    "delay": "200"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "textLast": "transform their vision into a reality.",
     "info": "Marketing",
     "date": "May 6th, 2024",
-    "delay": 100
+    "delay": "100"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "textLast": "transform their vision into a reality.",
     "info": "Brand Identity",
     "date": "",
-    "delay": 200
+    "delay": "200"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "textLast": "transform their vision into a reality.",
     "info": "Digital Marketing",
     "date": "",
-    "delay": 100
+    "delay": "100"
   },
   {
     "id": 7,
@@ -67,6 +67,6 @@
     "textLast": "transform their vision into a reality.",
     "info": "User Interface",
     "date": "May 6th, 2024",
-    "delay": 200
+    "delay": "200"
   }
 ]
