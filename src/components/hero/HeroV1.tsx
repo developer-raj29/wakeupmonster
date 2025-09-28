@@ -28,9 +28,10 @@ const HeroV1 = () => {
               {/* Hero Description */}
               <div className="hero-top-desc">
                 <p>
-                  “ At AIXOR, we believe that creativity is the catalyst for
-                  innovation. As a full-service creative agency, we specialise
-                  in transforming bold ideas into compelling realities.
+                  “ At WAKE UP MONSTER, we believe that creativity is the
+                  catalyst for innovation. As a full-service creative agency, we
+                  specialise in transforming bold ideas into compelling
+                  realities.
                 </p>
                 <p>
                   Whether it’s developing a brand identity, creating a

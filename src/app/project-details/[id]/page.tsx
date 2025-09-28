@@ -1,9 +1,10 @@
 import ProjectDetailsContent from "@/components/project/ProjectDetailsContent";
 import FeatureV2Data from "@/assets/jsonData/feature/FeatureV3Data.json";
 import LayoutV3 from "@/components/layouts/LayoutV3";
+import { Data } from "@/assets/jsonData/data/data";
 
 export const metadata = {
-  title: "Aixor - Project Details",
+  title: `${Data.METADATA} - Project Details`,
 };
 
 interface Params {

@@ -30,7 +30,7 @@ const urbanist = Urbanist({
 });
 
 export const metadata: Metadata = {
-  title: "Aixor - Marketing Agency React NextJS Template",
+  title: "WAKE UP MONSTER",
 };
 
 export default function RootLayout({

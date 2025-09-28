@@ -33,8 +33,8 @@ const TeamV1 = () => {
                 Member?
               </h3>
               <p>
-                Join the AIXOR community and unlock a world of creative
-                possibilities.
+                Join the WAKE UP MONSTER community and unlock a world of
+                creative possibilities.
               </p>
             </div>
             <div className="team-cv-footer">

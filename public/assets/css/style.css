@@ -819,10 +819,10 @@ a {
 
 .hero-sec .hero-inner .hero-shape {
   position: absolute;
-  right: -51px;
+  right: 20px;
   bottom: 0;
-  width: 508px;
-  height: 488px;
+  width: 550px;
+  height: 510px;
   animation: upDownAnim 3s infinite linear;
   object-fit: contain;
   z-index: -1;

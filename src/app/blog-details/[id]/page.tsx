@@ -4,7 +4,7 @@ import Breadcrumb from '@/components/breadcrumb/Breadcrumb';
 import LayoutV3 from '@/components/layouts/LayoutV3';
 
 export const metadata = {
-    title: "Aixor - Blog Details"
+  title: "WAKE UP MONSTER - Blog Details",
 };
 
 interface Params {

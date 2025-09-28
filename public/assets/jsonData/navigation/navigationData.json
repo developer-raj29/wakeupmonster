@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "name": "Home",
+    "path": "/"
+  },
+  {
+    "id": 2,
+    "name": "About Us",
+    "path": "/about"
+  },
+  {
+    "id": 3,
+    "name": "Projects (7)",
+    "path": "/projects"
+  },
+  {
+    "id": 4,
+    "name": "Contact",
+    "path": "/contact"
+  },
+  {
+    "id": 5,
+    "name": "All Pages",
+    "path": "/all-pages",
+    "children": [
+      {
+        "id": 6,
+        "name": "Home - Ham Menu",
+        "path": "/"
+      },
+      {
+        "id": 7,
+        "name": "Home - Notch Menu",
+        "path": "/home-2"
+      },
+      {
+        "id": 8,
+        "name": "About Us",
+        "path": "/about"
+      },
+      {
+        "id": 9,
+        "name": "Project Single",
+        "path": "/project-details/1"
+      },
+      {
+        "id": 10,
+        "name": "Blog",
+        "path": "/blog"
+      },
+      {
+        "id": 11,
+        "name": "Blog Single",
+        "path": "/blog-details/1"
+      },
+      {
+        "id": 12,
+        "name": "Service Single",
+        "path": "/service-details/1"
+      },
+      {
+        "id": 13,
+        "name": "Team Single",
+        "path": "/team-details/1"
+      },
+      {
+        "id": 14,
+        "name": "Faq",
+        "path": "/faq"
+      },
+      {
+        "id": 14,
+        "name": "Contact",
+        "path": "/contact"
+      },
+      {
+        "id": 14,
+        "name": "404",
+        "path": "/not-found"
+      }
+    ]
+  }
+]

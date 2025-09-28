@@ -16,8 +16,8 @@ const AboutV2 = () => {
             <div className="right">
               <AnimatedText>
                 Founded on the principles of creativity, collaboration, and
-                excellence, AIXOR is a diverse team of industry experts
-                dedicated to delivering outstanding results...
+                excellence, WAKE UP MONSTER is a diverse team of industry
+                experts dedicated to delivering outstanding results...
               </AnimatedText>
               <AnimatedText>
                 We are committed to pushing the boundaries of what’s possible,

@@ -11,24 +11,24 @@ import TeamV1 from "@/components/team/TeamV1";
 import TestimonialV1 from "@/components/testimonial/TestimonialV1";
 
 const Home = () => {
-    return (
-        <>
-            <div className="aixor-main">
-                <LayoutV1>
-                    <HeroV1 />
-                    <AboutV1 />
-                    <ServicesV1 />
-                    <FeatureV1 />
-                    <AwardsV1 />
-                    <TeamV1 />
-                    <PriceV1 />
-                    <TestimonialV1 />
-                    <ContactV1 />
-                    <PartnerV1 />
-                </LayoutV1>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <div className="aixor-main">
+        <LayoutV1>
+          <HeroV1 />
+          <AboutV1 />
+          <ServicesV1 />
+          <FeatureV1 />
+          <AwardsV1 />
+          <TeamV1 />
+          <PriceV1 />
+          <TestimonialV1 />
+          <ContactV1 />
+          <PartnerV1 />
+        </LayoutV1>
+      </div>
+    </>
+  );
 };
 
 export default Home;

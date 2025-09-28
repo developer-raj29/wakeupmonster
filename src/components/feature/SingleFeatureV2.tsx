@@ -12,11 +12,11 @@ interface DataType {
   textLast?: string;
   info?: string;
   date?: string;
-  delay?: string;
+  delay?: number; // ✅ change from string → number
 }
 
-const SingleFeatureV2 = ({ feature }: { feature: DataType }) => {
-  const { id, thumb, name, textFirst, textLast, info, date, delay } = feature;
+const SingleFeatureV2 = ({ features }: { features: DataType }) => {
+  const { id, thumb, name, textFirst, textLast, info, date, delay } = features;
 
   const { containerRef, hoverElementRef } = useHoverEffect();
   const [isClient, setIsClient] = useState(false);
@@ -26,10 +26,17 @@ const SingleFeatureV2 = ({ feature }: { feature: DataType }) => {
   }, []);
 
   // Build safe AOS props (only when client is ready)
+  // const aosProps = isClient
+  //   ? {
+  //       "data-aos": "fade-up",
+  //       ...(delay ? { "data-aos-delay": delay ?? 0 } : {}),
+  //     }
+  //   : {};
+
   const aosProps = isClient
     ? {
         "data-aos": "fade-up",
-        ...(delay ? { "data-aos-delay": delay } : {}),
+        "data-aos-delay": delay ?? 0,
       }
     : {};
 
@@ -68,6 +75,15 @@ const SingleFeatureV2 = ({ feature }: { feature: DataType }) => {
               <br />
               {textLast}
             </span>
+            {/* <span className="subtitle">
+              {textFirst}
+              {textLast && (
+                <>
+                  <br />
+                  {textLast}
+                </>
+              )}
+            </span> */}
           </div>
 
           <div className="feature-project-info-box">
