@@ -21,8 +21,8 @@ const HeroV2 = ({ title }: DataType) => {
                 <p>{`"At Wake Up Monster, we hold that creativity sparks innovation. As a full-spectrum creative firm, we excel in converting ambitious ideas into engaging results."`}</p>
               </div>
               <div className="author-info">
-                <h4>Ahshan M</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Rajat Khoware</h4>
+                <span>Founder</span>
               </div>
             </div>
             <div className="hero-bottom">

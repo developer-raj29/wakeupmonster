@@ -3,6 +3,7 @@ import Image from "next/image";
 import AnimatedText from "../animated/AnimatedText";
 import SingleFactV2 from "./SingleFactV2";
 import FactData from "@/assets/jsonData/fact/FactData.json";
+import SecSubTitle from "../subTitle/SecSubTitle";
 
 const AboutV2 = () => {
   return (
@@ -10,20 +11,21 @@ const AboutV2 = () => {
       <div className="about-sec" id="about">
         <div className="custom-container">
           <div className="section-header">
-            <span className="section-subtitle">
-              <Image src={unionIcon} alt="About Us" /> About Us
-            </span>
+            <SecSubTitle img={unionIcon} text={"About Us"} />
             <div className="right">
               <AnimatedText>
                 Founded on the principles of creativity, collaboration, and
                 excellence, WAKE UP MONSTER is a diverse team of industry
-                experts dedicated to delivering outstanding results...
+                experts dedicated to delivering outstanding results. We are
+                committed to pushing the boundaries of what’s possible, working
+                together seamlessly to exceed expectations and deliver
+                outstanding value to our clients.
               </AnimatedText>
-              <AnimatedText>
+              {/* <AnimatedText>
                 We are committed to pushing the boundaries of what’s possible,
                 working together seamlessly to exceed expectations and deliver
                 outstanding value to our clients.
-              </AnimatedText>
+              </AnimatedText> */}
             </div>
           </div>
           <div className="funfacts-wrap">

@@ -29,11 +29,9 @@ const ServicesV1 = () => {
           <div className="section-header">
             <SecSubTitle img={Union} text="Our Service" />
             <AnimatedText>
-              {`At ${(
-                <Title text="WakeupMonster" />
-              )}, we offer tailored creative
-              solutions to elevate your brand and drive success, exceeding your
-              expectations with our expert team's dedicated services`}
+              At Wake up Monster we offer tailored creative solutions to elevate
+              your brand and drive success, exceeding your expectations with our
+              expert team's dedicated services
             </AnimatedText>
           </div>
         </div>

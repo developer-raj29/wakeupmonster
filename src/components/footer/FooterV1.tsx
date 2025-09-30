@@ -67,20 +67,20 @@ const FooterV1 = () => {
                         <a
                           data-aos="slide-up"
                           data-aos-duration={700}
-                          href="tel:+840123456789"
+                          href="tel:+91 6260002320"
                           className="with-border"
                         >
-                          (+84) 0123456789
+                          +91 6260002320
                         </a>
                       </div>
                       <div className="split-text-anim">
                         <a
                           data-aos="slide-up"
                           data-aos-duration={700}
-                          href="mailto:MindBlowingArt2692@gmail.com"
+                          href="mailto:hello@wakeupmonster.com"
                           className="with-border"
                         >
-                          MindBlowingArt2692@gmail.com
+                          hello@wakeupmonster.com
                         </a>
                       </div>
                     </div>
@@ -137,7 +137,7 @@ const FooterV1 = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="copyright">BASED IN HANOI, VIETNAM</div>
+                <div className="copyright">Based in Indore, India</div>
               </div>
             </div>
           </div>

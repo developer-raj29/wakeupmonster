@@ -43,8 +43,8 @@ const HeroV1 = () => {
 
               {/* Author Information */}
               <div className="author-info">
-                <h4>Ahshan M</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Rajat Khoware</h4>
+                <span>Founder</span>
               </div>
             </div>
 

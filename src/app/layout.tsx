@@ -9,6 +9,7 @@ import "@/assets/css/animate.min.css";
 import "@/assets/css/aixor-unit-test.css";
 import "@/assets/css/style.css";
 import "@/assets/css/responsive.css";
+import "@/app/globals.css";
 
 import type { Metadata } from "next";
 import { Arapey, Urbanist } from "next/font/google";
