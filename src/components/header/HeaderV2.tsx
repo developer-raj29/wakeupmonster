@@ -1,5 +1,5 @@
 import logo1 from "@/assets/images/WMLogo2.png";
-import navigationLinks from "@/assets/jsonData/navigation/navigationData.json";
+import navigationLinks from "@/assets/jsonData/navigation/navigationData1.json";
 import Navigation from "./Navigation";
 
 const HeaderV2 = () => {

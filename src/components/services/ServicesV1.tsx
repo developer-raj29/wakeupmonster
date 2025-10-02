@@ -1,13 +1,11 @@
 "use client";
 import Union from "@/assets/images/Union.svg";
-import arrowDown from "@/assets/images/arrow-down.svg";
-import Image from "next/image";
 import AnimatedText from "../animated/AnimatedText";
 import ServicesV1Data from "@/assets/jsonData/services/ServicesV1Data.json";
-import SingleServicesV1 from "./SingleServicesV1";
 import { useState } from "react";
 import SecSubTitle from "../subTitle/SecSubTitle";
-import Title from "../subTitle/Title";
+import { ServiceBox, ServiceCard } from "../ui/serviceBox";
+import services from "@/assets/jsonData/data/services.json";
 
 const ServicesV1 = () => {
   const [activeServiceId, setActiveServiceId] = useState(
@@ -29,13 +27,22 @@ const ServicesV1 = () => {
           <div className="section-header">
             <SecSubTitle img={Union} text="Our Service" />
             <AnimatedText>
-              At Wake up Monster we offer tailored creative solutions to elevate
+              At WAKEUPMONSTER we offer tailored creative solutions to elevate
               your brand and drive success, exceeding your expectations with our
               expert team's dedicated services
             </AnimatedText>
           </div>
         </div>
-        <div className="service-lists-wrap">
+
+        <div className="serviceBox">
+          <ServiceBox className="grid grid-cols-3 p-1 gap-[10px]">
+            {services.map((item, index) => (
+              <ServiceCard key={index} {...item} />
+            ))}
+          </ServiceBox>
+        </div>
+
+        {/* <div className="service-lists-wrap">
           <div className="service-lists-header">
             <div className="custom-container">
               <div className="service-header-th">
@@ -53,7 +60,7 @@ const ServicesV1 = () => {
             </div>
           </div>
 
-          {/* Service Lists */}
+          Service Lists
           <div className="service-lists">
             {ServicesV1Data.map((services) => (
               <div
@@ -68,7 +75,7 @@ const ServicesV1 = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

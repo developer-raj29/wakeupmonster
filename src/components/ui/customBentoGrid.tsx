@@ -30,7 +30,7 @@ const BentoCard = ({ className, background, ...props }: BentoCardProps) => (
   <div
     className={cn(
       "group relative overflow-hidden col-span-3 flex flex-col rounded-[10px] will-change-transform",
-      "bg-[#171717] border-1 border-neutral-700",
+      "bg-[#0c0b0b] border-[1px] border-neutral-700",
       //   "bg-gradient-to-br from-[#0e0d0d] to-[#0c0c0c] border-1 border-neutral-700",
       className
     )}

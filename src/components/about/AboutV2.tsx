@@ -15,11 +15,11 @@ const AboutV2 = () => {
             <div className="right">
               <AnimatedText>
                 Founded on the principles of creativity, collaboration, and
-                excellence, WAKE UP MONSTER is a diverse team of industry
-                experts dedicated to delivering outstanding results. We are
-                committed to pushing the boundaries of what’s possible, working
-                together seamlessly to exceed expectations and deliver
-                outstanding value to our clients.
+                excellence, WAKEUPMONSTER is a diverse team of industry experts
+                dedicated to delivering outstanding results. We are committed to
+                pushing the boundaries of what’s possible, working together
+                seamlessly to exceed expectations and deliver outstanding value
+                to our clients.
               </AnimatedText>
               {/* <AnimatedText>
                 We are committed to pushing the boundaries of what’s possible,

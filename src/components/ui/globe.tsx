@@ -6,17 +6,21 @@ import { useMotionValue, useSpring } from "motion/react";
 
 import { cn } from "@/lib/utils";
 
-function hexToCOBE(hex: string): [number, number, number] {
-  const bigint = parseInt(hex.slice(1), 16);
-  return [
-    ((bigint >> 16) & 255) / 255,
-    ((bigint >> 8) & 255) / 255,
-    (bigint & 255) / 255,
-  ];
-}
+// function hexToCOBE(hex: string): [number, number, number] {
+//   const bigint = parseInt(hex.slice(1), 16);
+//   return [
+//     ((bigint >> 16) & 255) / 255,
+//     ((bigint >> 8) & 255) / 255,
+//     (bigint & 255) / 255,
+//   ];
+// }
 
-// Example
-// Orange
+const hexToCOBE = (hex: string): [number, number, number] => {
+  const r = parseInt(hex.slice(1, 3), 16) / 255;
+  const g = parseInt(hex.slice(3, 5), 16) / 255;
+  const b = parseInt(hex.slice(5, 7), 16) / 255;
+  return [r, g, b];
+};
 
 const MOVEMENT_DAMPING = 1400;
 
@@ -26,15 +30,16 @@ const GLOBE_CONFIG: COBEOptions = {
   onRender: () => {},
   devicePixelRatio: 2,
   phi: 0,
-  theta: 0.3,
+  theta: 0.4,
   dark: 1,
   diffuse: 0.4,
   mapSamples: 16000,
-  mapBrightness: 3,
-  baseColor: [0.5, 0.5, 0.5],
+  mapBrightness: 5,
+  baseColor: [0.4, 0.4, 0.4],
   // baseColor: hexToCOBE("#171717"),
   markerColor: [251 / 255, 100 / 255, 21 / 255],
-  glowColor: [1, 1, 1],
+  // glowColor: hexToCOBE("#ff6224"), // dark orange
+  glowColor: hexToCOBE("#f98d63"), // light orange
   markers: [
     // { location: [14.5995, 120.9842], size: 0.03 },
     // { location: [19.076, 72.8777], size: 0.1 },

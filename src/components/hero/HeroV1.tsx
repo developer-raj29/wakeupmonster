@@ -28,8 +28,8 @@ const HeroV1 = () => {
               {/* Hero Description */}
               <div className="hero-top-desc">
                 <p>
-                  “ At WAKE UP MONSTER, we believe that creativity is the
-                  catalyst for innovation. As a full-service creative agency, we
+                  “ At WAKEUPMONSTER, we believe that creativity is the catalyst
+                  for innovation. As a full-service creative agency, we
                   specialise in transforming bold ideas into compelling
                   realities.
                 </p>

@@ -1840,6 +1840,12 @@ a {
   margin-bottom: 90px;
 }
 
+.service-sec .serviceBox {
+  max-width: 1300px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+
 .service-lists-header {
   border-top: 1px solid #999999;
   padding: 12px 0 0;

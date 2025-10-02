@@ -2,15 +2,16 @@
 import sidebarbg from "@/assets/images/sidebarbg.png";
 import Image from "next/image";
 import SocialShareV1 from "../social/SocialShareV1";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import logo1 from "@/assets/images/WMLogo2.png";
 import useNotchScrollLink from "@/hooks/useNotchScrollLink";
 import Navigation from "./Navigation";
-import navigationLinks from "@/assets/jsonData/navigation/navigationData.json";
+import navigationLinks from "@/assets/jsonData/navigation/navigationData1.json";
 
 const HeaderV3 = () => {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
-  const [isHamburgActive, setIsHamburgActive] = useState(false);  
+  const [isHamburgActive, setIsHamburgActive] = useState(false);
+  const sidebarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,6 +39,29 @@ const HeaderV3 = () => {
 
   useNotchScrollLink(".notch-bar-menu-wrap", "a[href^='#']");
 
+  // ✅ Close sidebar on outside click
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target as Node) &&
+        isSidebarActive
+      ) {
+        handleCloseClick();
+      }
+    };
+
+    if (isSidebarActive) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isSidebarActive]);
+
   return (
     <>
       {/* hamburg-menu */}
@@ -54,7 +78,7 @@ const HeaderV3 = () => {
 
       {/* Sidebar */}
       <div className={`header-sidebar-wrap ${isSidebarActive ? "active" : ""}`}>
-        <div className="header-sidebar-content">
+        <div className="header-sidebar-content" ref={sidebarRef}>
           <span className="close-header-sidebar" onClick={handleCloseClick}>
             <i className="las la-times" />
           </span>
@@ -64,14 +88,14 @@ const HeaderV3 = () => {
           <div className="header-sidebar-top">
             <ul>
               <li>
-                <span>Based in Hanoi,</span>
-                <a href="mailto:email@example.com">
-                  E: MindBlowingArt2692@gmail.com
+                <span>Based in India,</span>
+                <a href="mailto:hello@wakeupmonster.com">
+                  E: hello@wakeupmonster.com
                 </a>
               </li>
               <li>
-                <span>VietNam</span>
-                <a href="tel:+1234567890">(+84) 0123456789</a>
+                <span>Indore</span>
+                <a href="tel:+91 6260002320">+91 6260002320</a>
               </li>
             </ul>
           </div>
@@ -182,14 +206,14 @@ const HeaderV3 = () => {
           <div className="header-sidebar-top">
             <ul>
               <li>
-                <span>Based in Hanoi,</span>
-                <a href="mailto:email@example.com">
-                  E: MindBlowingArt2692@gmail.com
+                <span>Based in India,</span>
+                <a href="mailto:hello@wakeupmonster.com">
+                  E: hello@wakeupmonster.com
                 </a>
               </li>
               <li>
-                <span>VietNam</span>
-                <a href="tel:+1234567890">(+84) 0123456789</a>
+                <span>Indore</span>
+                <a href="tel:+91 6260002320">+91 6260002320</a>
               </li>
             </ul>
           </div>

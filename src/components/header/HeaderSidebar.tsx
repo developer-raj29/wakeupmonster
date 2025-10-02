@@ -2,21 +2,22 @@
 import sidebarbg from "@/assets/images/sidebarbg.png";
 import Image from "next/image";
 import SocialShareV1 from "../social/SocialShareV1";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import Link from "next/link";
+import navigationLinks from "@/assets/jsonData/navigation/navigationData2.json";
 
 const HeaderSidebar = () => {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
   const [isHamburgActive, setIsHamburgActive] = useState(false);
+  const sidebarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsHamburgActive(window.scrollY >= 100);
     };
 
-    // Attach event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup function
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -31,6 +32,31 @@ const HeaderSidebar = () => {
     setIsSidebarActive(false);
     document.body.style.overflow = "auto";
   };
+
+  console.log("sidebarRef.current: ", sidebarRef.current);
+
+  // ✅ Close sidebar on outside click
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target as Node) &&
+        isSidebarActive
+      ) {
+        handleCloseClick();
+      }
+    };
+
+    if (isSidebarActive) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isSidebarActive]);
 
   return (
     <>
@@ -48,7 +74,7 @@ const HeaderSidebar = () => {
 
       {/* Sidebar */}
       <div className={`header-sidebar-wrap ${isSidebarActive ? "active" : ""}`}>
-        <div className="header-sidebar-content">
+        <div className="header-sidebar-content" ref={sidebarRef}>
           <span className="close-header-sidebar" onClick={handleCloseClick}>
             <i className="las la-times" />
           </span>
@@ -58,14 +84,14 @@ const HeaderSidebar = () => {
           <div className="header-sidebar-top">
             <ul>
               <li>
-                <span>Based in Hanoi,</span>
-                <a href="mailto:email@example.com">
-                  E: MindBlowingArt2692@gmail.com
+                <span>Based in India,</span>
+                <a href="mailto:hello@wakeupmonster.com">
+                  E: hello@wakeupmonster.com
                 </a>
               </li>
               <li>
-                <span>VietNam</span>
-                <a href="tel:+1234567890">(+84) 0123456789</a>
+                <span>Indore</span>
+                <a href="tel:+91 6260002320">+91 6260002320</a>
               </li>
             </ul>
           </div>
@@ -73,43 +99,16 @@ const HeaderSidebar = () => {
           {/* Sidebar menu */}
           <nav className="sidebar-menu">
             <ul className="menu" id="sidebar-menu-id">
-              <li>
-                <a href="#about" onClick={handleCloseClick}>
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#services" onClick={handleCloseClick}>
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#projects" onClick={handleCloseClick}>
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="#awards" onClick={handleCloseClick}>
-                  Awards
-                </a>
-              </li>
-              <li>
-                <a href="#team" onClick={handleCloseClick}>
-                  Members
-                </a>
-              </li>
-              <li>
-                <a href="#pricing" onClick={handleCloseClick}>
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a href="#contact" onClick={handleCloseClick}>
-                  Contact
-                </a>
-              </li>
+              {navigationLinks.map((item) => (
+                <li key={item.id}>
+                  <Link href={item.path} onClick={handleCloseClick}>
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
+
           <div className="header-sidebar-bottom">
             <ul>
               <SocialShareV1 />

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "video": "/assets/video/Development.mp4",
+    "poster": "/assets/images/Development.jpg",
+    "heading": "Product Design ",
+    "btnText": "Learn more",
+    "path": "#"
+  },
+  {
+    "id": "2",
+    "video": "/assets/video/Black Skate Wheel.mp4",
+    "poster": "/assets/images/Black Skate Wheel.jpg",
+    "heading": "Development",
+    "btnText": "Learn more",
+    "path": "#"
+  },
+  {
+    "id": "3",
+    "video": "/assets/video/Development.mp4",
+    "poster": "/assets/images/Development.jpg",
+    "heading": "Visual System",
+    "btnText": "Learn more",
+    "path": "#"
+  }
+]

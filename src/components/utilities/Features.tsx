@@ -77,7 +77,7 @@ export const features = [
             value={12}
             className="tracking-tighter whitespace-pre-wrap text-white"
           />
-          <span>+</span>
+          <span className="text-[#ff6224]">+</span>
         </div>
         <h4>Years Experience</h4>
       </div>
@@ -93,7 +93,7 @@ export const features = [
             value={25}
             className="tracking-tighter whitespace-pre-wrap text-white"
           />
-          <span>+</span>
+          <span className="text-[#ff6224]">+</span>
         </div>
         <h4>Completed Projects</h4>
       </div>
@@ -109,7 +109,7 @@ export const features = [
             value={110}
             className="tracking-tighter whitespace-pre-wrap text-white"
           />
-          <span>+</span>
+          <span className="text-[#ff6224]">+</span>
         </div>
         <h4>Award Winning</h4>
       </div>

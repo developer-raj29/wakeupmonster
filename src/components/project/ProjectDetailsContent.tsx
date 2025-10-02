@@ -22,8 +22,8 @@ const ProjectDetailsContent = ({ projectData }: { projectData: Datatype }) => {
               </span>
               <AnimatedText>
                 Founded on the principles of creativity, collaboration, and
-                excellence, WAKE UP MONSTER is a diverse team of industry
-                experts dedicated to delivering outstanding results...
+                excellence, WAKEUPMONSTER is a diverse team of industry experts
+                dedicated to delivering outstanding results...
               </AnimatedText>
             </div>
           </div>
