@@ -57,10 +57,10 @@ const Navigation: React.FC<Props> = ({ navigationLinks, logo1 }) => {
 
       {/* Header right info */}
       <div className="header-right-info">
-        <a className="with-border" href="tel:+1234567890">
-          (+84) 0123456789
+        <a className="with-border" href="tel:+91 6260002320">
+          +91 6260002320
         </a>
-        <a href="mailto:example@gmail.com">
+        <a href="mailto:hello@wakeupmonster.com">
           <i className="iconoir-mail-out" />
         </a>
       </div>
