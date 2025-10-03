@@ -1,7 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import btnArrow from "@/assets/images/btn-arrow.svg";
-import WM3DLogoLab from "@/assets/images/3DWMLogoLab.png";
+import WM3DLogoLab from "@/assets/images/3DWMLogoLab1.png";
 import Image from "next/image";
 import { toast } from "react-toastify";
 

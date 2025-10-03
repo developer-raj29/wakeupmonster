@@ -22,7 +22,7 @@ const hexToCOBE = (hex: string): [number, number, number] => {
   return [r, g, b];
 };
 
-const MOVEMENT_DAMPING = 1400;
+const MOVEMENT_DAMPING = 900;
 
 const GLOBE_CONFIG: COBEOptions = {
   width: 800,
@@ -104,7 +104,7 @@ export function Globe({
       width: width * 2,
       height: width * 2,
       onRender: (state) => {
-        if (!pointerInteracting.current) phi += 0.005;
+        if (!pointerInteracting.current) phi += 0.003; // movement slower
         state.phi = phi + rs.get();
         state.width = width * 2;
         state.height = width * 2;

@@ -965,6 +965,26 @@ a {
   gap: 70px;
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+  transform: translate3d(0, 0, 0);
+}
+
 .about-sec .funfacts-wrap {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

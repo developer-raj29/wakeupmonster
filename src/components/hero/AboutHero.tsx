@@ -1,5 +1,5 @@
 // import contact from '@/assets/images/contact.png';
-import WM3DLogoLab from "@/assets/images/3DWMLogoLab.png";
+import WM3DLogoLab from "@/assets/images/3DWMLogoLab1.png";
 
 import btnArrow from "@/assets/images/btn-arrow.svg";
 import Image from "next/image";

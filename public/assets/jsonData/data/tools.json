@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Adobe",
+    "icon": "/assets/svg/adobe.svg",
+    "weblink": "https://www.adobe.com/"
+  },
+  {
+    "name": "Apple",
+    "icon": "/assets/svg/apple.svg",
+    "weblink": "https://www.apple.com/"
+  },
+  {
+    "name": "DropBox",
+    "icon": "/assets/svg/dropBox.svg",
+    "weblink": "https://www.dropbox.com/"
+  },
+  {
+    "name": "Figma",
+    "icon": "/assets/svg/figma.svg",
+    "weblink": "https://www.figma.com/"
+  },
+  {
+    "name": "GreyScaleGorilla",
+    "icon": "/assets/svg/greyScaleGorilla.svg",
+    "weblink": "https://greyscalegorilla.com/"
+  },
+  {
+    "name": "GSAP",
+    "icon": "/assets/svg/gsap.svg",
+    "weblink": "https://gsap.com/"
+  },
+  {
+    "name": "INSYDIUM",
+    "icon": "/assets/svg/insydium.svg",
+    "weblink": "https://insydium.ltd/"
+  },
+  {
+    "name": "LottieFiles",
+    "icon": "/assets/svg/lottieFiles.svg",
+    "weblink": "https://lottiefiles.com/"
+  },
+  {
+    "name": "Maxon",
+    "icon": "/assets/svg/maxon.svg",
+    "weblink": "https://www.maxon.net/en/"
+  },
+  {
+    "name": "Pitch",
+    "icon": "/assets/svg/pitch.svg",
+    "weblink": "https://pitch.com/"
+  },
+  {
+    "name": "Relume",
+    "icon": "/assets/svg/relume.svg",
+    "weblink": "https://www.relume.io/"
+  },
+  {
+    "name": "Rive",
+    "icon": "/assets/svg/rive.svg",
+    "weblink": "https://rive.app/"
+  },
+  {
+    "name": "Slack",
+    "icon": "/assets/svg/slack.svg",
+    "weblink": "https://slack.com/intl/en-in/"
+  },
+  {
+    "name": "Spline",
+    "icon": "/assets/svg/spline.svg",
+    "weblink": "https://spline.design/"
+  },
+  {
+    "name": "Stripe",
+    "icon": "/assets/svg/stripe.svg",
+    "weblink": "https://stripe.com/in"
+  },
+  {
+    "name": "Trello",
+    "icon": "/assets/svg/trello.svg",
+    "weblink": "https://trello.com/"
+  },
+  {
+    "name": "Webflow",
+    "icon": "/assets/svg/webflow.svg",
+    "weblink": "https://webflow.com/"
+  },
+  {
+    "name": "Zapier",
+    "icon": "/assets/svg/zapier.svg",
+    "weblink": "https://zapier.com/"
+  }
+]

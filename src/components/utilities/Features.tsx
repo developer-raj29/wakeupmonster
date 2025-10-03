@@ -1,5 +1,9 @@
+import Image from "next/image";
 import { Globe } from "../ui/globe";
 import { NumberTicker } from "../ui/number-ticker";
+import tools from "@/assets/jsonData/data/tools.json";
+import Link from "next/link";
+import Toolbox from "../ui/tool-box";
 
 const files = [
   {
@@ -118,7 +122,59 @@ export const features = [
   {
     id: "6",
     className: "col-span-7",
-    background: <>24+</>,
+    background: (
+      <section className="w-full bg-[#0c0c0c] py-14 px-8">
+        <div className="relative w-full flex items-center gap-1">
+          {/* Left Text */}
+          <div className="flex flex-col gap-1 w-[15%]">
+            <h3 className="text-lg font-semibold text-white">
+              Everyday’s Toolbox
+            </h3>
+            <p className="text-sm text-neutral-400">
+              Mastered for every project.
+            </p>
+          </div>
+
+          {/* Tool Icons Carousel */}
+          {/* <div
+            className="relative w-full overflow-hidden"
+            style={{
+              WebkitMaskImage:
+                "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 12.5%, rgba(0,0,0,1) 87.5%, rgba(0,0,0,0) 100%)",
+              WebkitMaskRepeat: "no-repeat",
+              WebkitMaskSize: "100% 100%",
+              maskImage:
+                "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 12.5%, rgba(0,0,0,1) 87.5%, rgba(0,0,0,0) 100%)",
+              maskRepeat: "no-repeat",
+              maskSize: "100% 100%",
+            }}
+          >
+            <ul className="flex gap-4 w-min animate-marquee">
+              {/* Repeat twice for infinite effect 
+              {[...tools, ...tools].map((tool, i) => (
+                <li
+                  key={i}
+                  className="flex size-16 items-center justify-center rounded-lg bg-neutral-900 border-1 border-neutral-800 hover:border-[#ff6224] "
+                  title={tool.name}
+                >
+                  <Link href={tool.weblink} target="_blank" className="">
+                    <Image
+                      src={tool.icon}
+                      alt={tool.name}
+                      width={28}
+                      height={28}
+                      className="object-contain"
+                    />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div> */}
+
+          <Toolbox tools={tools} />
+        </div>
+      </section>
+    ),
   },
 ];
 
