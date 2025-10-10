@@ -61,7 +61,7 @@ const ServiceCard = ({ video, poster, btnText, heading }: ServiceCardProps) => {
 
   return (
     <div
-      className="relative w-[425px] h-[550px] rounded-[10px] bg-[#0c0b0b] group cursor-pointer border-[1px] border-neutral-700 overflow-hidden"
+      className="relative xl:w-[415px] md:w-[425px] sm:w-[450px] w-[380px] xl:h-[520px] md:h-[550px] h-[600px] my-1 mx-auto rounded-[10px] bg-[#0c0b0b] group cursor-pointer border-[1px] border-neutral-700 overflow-hidden"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onMouseMove={handleMouseMove}

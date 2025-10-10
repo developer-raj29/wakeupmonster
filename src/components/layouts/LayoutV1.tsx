@@ -1,3 +1,4 @@
+import Footer3 from "../footer/Footer3";
 import FooterV1 from "../footer/FooterV1";
 import HeaderV1 from "../header/HeaderV1";
 
@@ -10,7 +11,7 @@ const LayoutV1 = ({ children }: DataType) => {
         <>
             <HeaderV1 />
             {children}
-            <FooterV1 />
+            <Footer3 />
         </>
     );
 };

@@ -18,7 +18,11 @@ const HeroV2 = ({ title }: DataType) => {
             <Image className="hero-shape" src={WM3DLogoLab} alt="Shape" />
             <div className="hero-top">
               <div className="hero-top-desc">
-                <p>{`"At WAKEUPMONSTER, we hold that creativity sparks innovation. As a full-spectrum creative firm, we excel in converting ambitious ideas into engaging results."`}</p>
+                <p>
+                  “At WAKEUPMONSTER, we hold that creativity sparks innovation.
+                  As a full-spectrum creative firm, we excel in converting
+                  ambitious ideas into engaging results.”
+                </p>
               </div>
               <div className="author-info">
                 <h4>Rajat Khoware</h4>

@@ -35,7 +35,7 @@ const ServicesV1 = () => {
         </div>
 
         <div className="serviceBox">
-          <ServiceBox className="grid grid-cols-3 p-1 gap-[10px]">
+          <ServiceBox className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 p-1 xl:gap-[2px] lg:gap-[8px] gap-[10px]">
             {services.map((item, index) => (
               <ServiceCard key={index} {...item} />
             ))}

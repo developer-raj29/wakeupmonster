@@ -80,11 +80,11 @@ a.with-border {
 a.with-border:before {
   content: "";
   width: 0;
-  height: 1px;
+  height: 1.5px;
   position: absolute;
   left: 0;
-  bottom: 0;
-  background: #ffffff;
+  bottom: -5;
+  background: #ff4422;
   transition: 0.4s;
   -webkit-transition: 0.4s;
 }
@@ -106,9 +106,10 @@ a {
 }
 
 .theme-btn {
-  font-size: 16px;
-  display: inline-flex;
+  font-size: 14px;
+  display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   border: 1.6px solid var(--Orange);

@@ -21,7 +21,7 @@ const ScrollToTop = () => {
     visible && (
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed p-3 bottom-6 right-6 rounded-full border-1 bg-black text-white shadow-lg hover:bg-gray-800 transition"
+        className="fixed p-3 bottom-6 right-6 rounded-full border-1 bg-black text-white shadow-lg hover:bg-gray-800 transition z-10"
         aria-label="Scroll to top"
       >
         <FaArrowUp fontSize={20} />
