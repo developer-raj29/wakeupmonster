@@ -111,7 +111,10 @@ const Footer3 = () => {
                     className="flex-1 w-full bg-transparent border-b-[1px] px-1 py-3 text-lg outline-none text-white placeholder-gray-500"
                   />
 
-                  <Link href="/contact" className="theme-btn w-full text-xl font-bold">
+                  <Link
+                    href="/contact"
+                    className="theme-btn w-full text-xl font-bold"
+                  >
                     {`SUBSCRIBE`}
                     <Image
                       src={btnArrow}
@@ -128,8 +131,7 @@ const Footer3 = () => {
           {/* -------- Bottom Row -------- */}
           <div className="flex flex-col items-start text-[13px] text-gray-400 text-center">
             <p className="uppercase tracking-wider text-gray-400/90">
-              &copy;{new Date().getFullYear()} WAKE UP MONSTER ALL RIGHTS
-              RESERVED
+              &copy;{new Date().getFullYear()} WAKEUPMONSTER ALL RIGHTS RESERVED
             </p>
 
             <div className="flex items-center gap-2 mt-2">
