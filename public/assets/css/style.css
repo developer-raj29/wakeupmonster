@@ -329,6 +329,19 @@ a {
   max-width: 100%;
 }
 
+.preloader-wrap .text {
+  font-size: 165px;
+  font-weight: 900;
+  color: var(--Orange);
+}
+
+.preloader-wrap .text sup {
+  font-size: 50px;
+  font-weight: 600;
+  top: -72px;
+  color: var(--Orange);
+}
+
 /*==== # Header ====*/
 .header-menu-wrap {
   position: absolute;
