@@ -83,7 +83,7 @@ a.with-border:before {
   height: 1.5px;
   position: absolute;
   left: 0;
-  bottom: -5;
+  bottom: 0;
   background: #ff4422;
   transition: 0.4s;
   -webkit-transition: 0.4s;
@@ -3569,7 +3569,8 @@ a {
 }
 
 /* ===== # Footer ===== */
-.footer-area .footer-bottom {
+/* old footer CSS */
+/*  .footer-area .footer-bottom {
   height: 245px;
   overflow: hidden;
   display: flex;
@@ -3724,6 +3725,261 @@ a {
   font-weight: 400;
   text-decoration: none;
   overflow-wrap: anywhere;
+}
+
+*/
+
+/* New Footer3 component CSS */
+/* ================== FOOTER BASE ================== */
+.footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================== BLACK FOOTER ================== */
+.footer-black {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ================== TOP SECTION ================== */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* font-size: 0.9rem; */
+}
+
+/* -------- Contact -------- */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 150px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a1a1a1;
+  letter-spacing: 2px;
+}
+
+.footer-email {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ff4422;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-phone {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-phone:hover {
+  color: #ff4422;
+}
+
+/* -------- Links + Socials + Newsletter -------- */
+.footer-links-section {
+  width: 100%;
+  max-width: 60%;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.footer-links-left {
+  display: flex;
+  gap: 45px;
+}
+
+.footer-links,
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-heading {
+  text-transform: uppercase;
+  color: #a1a1a1;
+  margin-bottom: 12px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.footer-links ul,
+.footer-socials ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li,
+.footer-socials ul li {
+  width: max-content;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #ff4422;
+}
+
+.footer-icon {
+  width: 12px;
+  height: 12px;
+  display: block;
+}
+
+/* -------- Newsletter -------- */
+.footer-newsletter {
+  min-width: 390px;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-text {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.newsletter-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: #777;
+}
+
+/* ================== BOTTOM ROW ================== */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #6d6d6e;
+  font-size: 12px;
+  font-weight: 600;
+  gap: 5px;
+}
+
+.footer-legal {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-legal-link {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-legal-link:hover {
+  color: #ff4422;
+}
+
+.footer-divider {
+  width: 4px;
+  height: 4px;
+  background: #666;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+/* ================== ORANGE SECTION ================== */
+.footer-orange {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 55vh;
+  background: #ff4422;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 60px;
+  padding: 0 2.5rem;
+}
+
+.footer-orange-title {
+  text-align: start;
+  font-size: 165px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: -6px;
+}
+
+.footer-orange-title sup {
+  font-size: 30px;
+  /* vertical-align: super; */
+  top: -90px;
+}
+
+.footer-orange-subtitle {
+  font-size: 52px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  max-width: 300px;
+  text-align: end;
 }
 
 /*===== # 404 Not Found ===== */

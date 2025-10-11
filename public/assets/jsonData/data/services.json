@@ -1,17 +1,17 @@
 [
   {
     "id": "1",
-    "video": "/assets/video/Development.mp4",
-    "poster": "/assets/images/Development.jpg",
-    "heading": "Product Design ",
+    "video": "/assets/video/Black Skate Wheel.mp4",
+    "poster": "/assets/images/Black Skate Wheel.jpg",
+    "heading": "Design",
     "btnText": "Learn more",
     "path": "#"
   },
   {
     "id": "2",
-    "video": "/assets/video/Black Skate Wheel.mp4",
-    "poster": "/assets/images/Black Skate Wheel.jpg",
-    "heading": "Development",
+    "video": "/assets/video/Development.mp4",
+    "poster": "/assets/images/Development.jpg",
+    "heading": "Branding",
     "btnText": "Learn more",
     "path": "#"
   },
@@ -19,23 +19,31 @@
     "id": "3",
     "video": "/assets/video/Development.mp4",
     "poster": "/assets/images/Development.jpg",
-    "heading": "Visual System",
+    "heading": "Marketing",
     "btnText": "Learn more",
     "path": "#"
   },
   {
     "id": "4",
-    "video": "/assets/video/Black Skate Wheel.mp4",
-    "poster": "/assets/images/Black Skate Wheel.jpg",
-    "heading": "Development",
+    "video": "/assets/video/Development.mp4",
+    "poster": "/assets/images/Development.jpg",
+    "heading": "App Development",
     "btnText": "Learn more",
     "path": "#"
   },
   {
     "id": "5",
+    "video": "/assets/video/Black Skate Wheel.mp4",
+    "poster": "/assets/images/Black Skate Wheel.jpg",
+    "heading": "Web Development",
+    "btnText": "Learn more",
+    "path": "#"
+  },
+  {
+    "id": "6",
     "video": "/assets/video/Development.mp4",
     "poster": "/assets/images/Development.jpg",
-    "heading": "Visual System",
+    "heading": "AI & Automation",
     "btnText": "Learn more",
     "path": "#"
   }
